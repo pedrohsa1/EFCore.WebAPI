@@ -6,8 +6,8 @@
 
 O objetivo desse projeto é desenvolver um Crawler que faça a consulta dos dados do processo 0809979-67.2015.8.05.0080 no site do Segundo Grau do Tribunal de Justiça da BA (http://esaj.tjba.jus.br/cpo/sg/open.do). O projeto é constituído por uma aplicação Web Api e outra Console.
 
-  - Projeto Api possui as operações básicas CRUD para as tabelas modeladas, usando  a camada de persistência e o framework Entity.
-  - Na aplicação Console ScrapingTjba, fazemos o scraping ao executar projeto do console, buscando as informações e usamos as APIs para gravar-las  no banco de dados Mysql.
+  - Projeto Api possui as operações básicas CRUD para as tabelas modeladas, usando  a camada de persistência e o Entity Framework Core.
+  - Na aplicação Console ScrapingTjba, fazemos o scraping ao executar projeto, buscando as informações e usamos as APIs para gravar-las  no banco de dados Mysql.
 
 # Componentes do Projeto
 
