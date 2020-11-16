@@ -6,8 +6,8 @@
 
 O objetivo desses scripts é desenvolver um Crawler que faça a consulta dos dados do processo 0809979-67.2015.8.05.0080 no site do Segundo Grau do Tribunal de Justiça da BA (http://esaj.tjba.jus.br/cpo/sg/open.do). O projeto é constituído com uma aplicação Web Api e Console.
 
-  - Projeto Api possui as operações básicas CRUD para as tabelas modeladas, usando  a camada de persistência utilize o framework Entity.
-  - A aplicação console é feito o scraping das informações e usa as apis para gravar as informações.
+  - Projeto Api possui as operações básicas CRUD para as tabelas modeladas, usando  a camada de persistência e o framework Entity.
+  - Na aplicação Console, a ScrapingTjba, fazemos o scraping das informações e usamos as APIs para gravar as informações.
 
 # APIs
 
