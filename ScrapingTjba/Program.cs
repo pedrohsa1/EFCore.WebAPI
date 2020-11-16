@@ -72,14 +72,24 @@ namespace ScrapingTjba
                 if (processo.Id == 0)
                 {
                     if (Gravar(JsonConvert.SerializeObject(processo)))
-                        msgResponse = "O Processo foi gravado com sucesso";
-                    msgResponse = "Erro ao Gravar o Processo";
+                    {
+                        msgResponse = mensagemResponse(true);
+                    }
+                    else
+                    {
+                        msgResponse = mensagemResponse(false);
+                    }
                 }
                 else
                 {
                     if (Altera(processo.Id, JsonConvert.SerializeObject(processo)))
-                        msgResponse = "O Processo foi gravado com sucesso";
-                    msgResponse = "Erro ao Gravar o Processo";
+                    {
+                        msgResponse = mensagemResponse(true);
+                    }
+                    else
+                    {
+                        msgResponse = mensagemResponse(false);
+                    }                   
                 }
 
                 return msgResponse;
@@ -88,6 +98,15 @@ namespace ScrapingTjba
             {
                 return ex.ToString();
             }
+        }
+
+        static string mensagemResponse(bool sucesso)
+        {
+            if (sucesso)
+            {
+                return "O Processo foi gravado com sucesso";
+            }
+            return "Erro ao Gravar o Processo";
         }
 
         static bool Gravar(string jsonProcesso)
