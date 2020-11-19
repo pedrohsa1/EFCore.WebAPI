@@ -17,18 +17,18 @@ O objetivo desse projeto é desenvolver um Crawler que faça a consulta dos dado
 # Criação do Banco de Dados
 
   - Configurar a Conexão em appsettings.json
-  - Executar no Console do Gerenciador de Pacotes o comando update-migration
+  - Executar no Console do Gerenciador de Pacotes o comando update-database
 
 # APIs
 
   - GET api/processo
-  - GET api/processo/filtro/{numerodo_processo}
+  - GET api/processo/filtro/{numero_do_processo}
   - POST api/processo
   - PUT api/processo/{id}
   - DELETE api/processo/delete/{id}
   - GET api/movimentacao
   - PUT api/movimentacao/{id}
-  - DELETE api/movimentacao/delete/5
+  - DELETE api/movimentacao/delete/{numero_da_movimentacao}
 
 
 
